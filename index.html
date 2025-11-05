@@ -188,28 +188,42 @@ nav a:hover {
   }
 }
 .contact {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
   text-align: center;
-  padding: 60px 20px;
-  background-color: #f8f8f8;
+  font-family: 'Arial', sans-serif;
   color: #333;
 }
 
 .contact h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.contact p {
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
   font-size: 1.1rem;
-  margin: 10px 0;
+  line-height: 1.8;
 }
 
-.contact a {
+.contact-content p {
+  margin: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact-content a {
   color: #0d6efd;
   text-decoration: none;
 }
 
-.contact a:hover {
+.contact-content a:hover {
   text-decoration: underline;
 }
 
@@ -219,7 +233,6 @@ nav a:hover {
   vertical-align: middle;
   margin-right: 8px;
 }
-
   </style>
 </head>
 <body>
@@ -262,8 +275,9 @@ nav a:hover {
     Local Pickup & Dropoff Available.</p>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="contact">
     <h2>Contact Us</h2>
+    <div class="contact-content">
     <p>📍 Serving the local Northern Virignia community & surrounding areas with reliable professional services.</p>
     <p>📞 Call / Text: <strong>(757) 768-3440</strong></p>
     <p>✉️ Email: <a href="mailto:bengines703@gmail.com">bEngines703@gmail.com</a></p>
@@ -275,6 +289,7 @@ nav a:hover {
     <img src="instagram-icon.png" alt="Instagram" class="contact-icon">
     <a href="https://www.instagram.com/benginesva" target="_blank">@bEnginesva</a>
   </p>
+  </div>
 </section>
 
   <footer>
