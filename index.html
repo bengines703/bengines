@@ -66,15 +66,47 @@ nav a:hover {
   color: #ffcc00;
 }
 .hero {
-  background-color: #f7f5f5;
-  color: rgb(11, 1, 1);
+  background-color: #111;
+  color: white;
   text-align: center;
-  padding: 20px 20px;
-  border-radius: 12px;
+  padding-bottom: 60px;
+  overflow-x: hidden; /* prevents side-scrolling on mobile */
 }
 .hero-logo {
-  height: 250px;
-  width: fit-content;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain; /* keeps proportions */
+}
+.hero-text {
+  max-width: 900px;
+  margin: 50px auto 0;
+  padding: 0 20px;
+}
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* 🔧 Mobile adjustments */
+@media (max-width: 768px) {
+  .hero-text {
+    margin-top: 30px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
 }
     section {
       padding: 50px 20px;
