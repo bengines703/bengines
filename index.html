@@ -237,6 +237,13 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap; /* allows items to go to the next line if needed */
+}
+@media (max-width: 600px) { /* adjust breakpoint as needed */
+  .contact-content p {
+    flex-direction: column;
+    gap: 5px; /* smaller gap for stacked layout */
+  }
 }
 
 .contact-content a {
@@ -254,6 +261,7 @@ nav a:hover {
   vertical-align: middle;
   margin-right: 8px;
 }
+
   </style>
 </head>
 <body>
