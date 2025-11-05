@@ -70,24 +70,28 @@ nav a:hover {
   color: white;
   text-align: center;
   padding-bottom: 60px;
-  overflow-x: hidden; /* prevents side-scrolling on mobile */
+  overflow-x: hidden;
 }
+
 .hero-logo {
   width: 100%;
   max-width: 100%;
   height: auto;
   display: block;
-  object-fit: contain; /* keeps proportions */
+  object-fit: contain;
 }
+
 .hero-text {
   max-width: 900px;
   margin: 50px auto 0;
   padding: 0 20px;
 }
+
 .hero-text h2 {
   font-size: 2rem;
   margin-bottom: 15px;
 }
+
 .hero-text p {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -96,16 +100,45 @@ nav a:hover {
 
 /* 🔧 Mobile adjustments */
 @media (max-width: 768px) {
+  .hero {
+    padding-bottom: 30px; /* smaller space under banner */
+  }
+
+  .hero-logo {
+    margin-top: -10px; /* pulls logo up a bit for tighter layout */
+  }
+
   .hero-text {
-    margin-top: 30px;
+    margin-top: 25px;
+    padding: 0 15px;
   }
 
   .hero-text h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.4;
   }
 
   .hero-text p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-bottom: 20px;
+  }
+
+  .hero-text {
+    margin-top: 15px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
   }
 }
     section {
